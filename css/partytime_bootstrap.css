@@ -1,0 +1,126 @@
+.nav{margin-left:50px;
+}
+.navbar-default{
+  margin-bottom: 5px;
+}
+.signin{
+  position: relative;
+  left:40px;
+}
+.navbar-brand {
+    padding-top: 0px;
+
+}
+.navbar-brand img{
+height:50px;
+}
+.navbar-collapse{
+  padding-right: 0px;
+}
+
+/* ----------------------------------------Carousel-----------------------------------------------------*/
+
+.carousel-caption {
+	color: white;
+  text-align: center;
+}
+
+.carousel-inner .item img {
+    margin: 0 auto;
+}
+.carousel-control{
+	width:50px;
+  color: black;
+
+}
+
+/*------------------------------------------------------tabs -------------------------------------------*/
+.row .tabs{
+margin-top: 5px;
+}
+.row{
+  margin:0px;
+}
+
+#tabswitch{
+  border: 1px solid black;
+}
+
+#head2{
+  position: relative;
+  top:10px;
+  letter-spacing: 5px;
+  color: blue;
+}
+
+.tab-content a{
+  color:red;
+}
+
+.tabs{
+  margin-top: 5px;
+}
+.tabs img{
+  border-radius: 50px;
+}
+
+.nav-pills{
+  margin-left: 10px;
+}
+
+/*---------------------Map and Videos ---------------------------------------*/
+.thumbnail{
+  margin-top:5px;
+}
+
+.mapandvideos{
+  border: 1px solid black;
+}
+.mapandvideos #head2{
+text-align: center;
+}
+
+
+.head3{
+  font-size: 15px;
+}
+/*--------------------------------------------Modal winodw -----------------------------------------------*/
+.modal h4{
+  color:grey;
+}
+
+/*------------------------------Footer -----------------------------*/
+
+footer{
+  margin-top: 5px;
+  background: #333;
+  color: #eee;
+  font-size: 11px;
+  }
+
+
+/* ---------------------------------------landscape queries-----------------------------------------*/
+@media (max-width:768px) {
+  #mycarousel .item{
+    height: 310px;
+  }
+
+.navbar-collapse{
+
+  background-color: lightgrey;
+  }
+
+
+.navbar{
+  background: black;
+
+}
+.carousel-caption {
+  color: black;
+}
+.carousel-caption h4{
+  font-size: 10px;
+  text-align: left;
+  font-style: italic;
+}
+}
