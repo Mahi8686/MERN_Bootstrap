@@ -7,15 +7,9 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<!--<link rel="stylesheet" href="../css/test.css">-->
-	<!--  <script src="../js/script.js"></script>-->
-	<link rel="stylesheet" href="../css/partytime_bootstrap.css">
-
-
-
+	<link rel="stylesheet" href="../css/partytime_bootstrap_testing.css">
 </head>
 <body>
-
 
 <nav class="navbar navbar-default">
   <div class="container">
@@ -30,12 +24,14 @@
 <!--      <a class="navbar-brand" href="#">Party Time</a>-->
 			<div>
 				<a class="navbar-brand" href="#"><img src="../images/smalllogo.jpg"/></a>
+				<!--<a class="navbar-brand" href="#">Party Time</a>-->
+
 			</div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav ">
 						<li class="active">
 								<a href="#">Home</a>
 						</li>
@@ -68,7 +64,7 @@
 					<a href="#myModal" role="button" class="signin btn btn-info" data-toggle="modal"> Sign in </a>
 				</form>
 				<ul class="nav navbar-nav pull-right">
-					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account <strong class="caret"></strong></a>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" id="account"> <span class="glyphicon glyphicon-user"></span>My Account <strong class="caret"></strong></a>
 						<ul class="dropdown-menu">
 							<li><a href="#"> <span class="glyphicon glyphicon-user"></span>My Details</a></li>
 						 <li><a href="#"> <span class="glyphicon glyphicon-wrench"></span>settings</a></li>
@@ -80,10 +76,11 @@
 				</li>
 			</ul>
 		</div>
-  </div><!-- /.container-fluid -->
-</nav>
+  </div> <!--End of container  -->
+</nav> <!-- End of navbar -->
+
+
 <div class="container">
-<!--<div class="container">-->
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
@@ -95,16 +92,16 @@
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
 	    <div class="item active">
-	      <img src="../images/heroedited1.jpg" alt="carousel1" width="100%">
-	      <div class="carousel-caption">
+	      <img src="../images/Event1.jpg" alt="carousel1" width="100%">
+	      <div class="carousel-caption carousel_desc">
 	        <h4>ROMANTIC DINNER ON THE BEACH | MADINAT JUMEIRAH</h4>
 	      </div>
 	    </div>
 	    <div class="item">
-	      <img src="../images/carousel2.jpg" alt="carousel2" >
+	      <img src="../images/birthday.jpg" alt="carousel2" width="100%" >
 	    </div>
 			<div class="item">
-	      <img src="../images/carousel3.jpg" alt="carousel3" >
+	      <img src="../images/Kinsale1.jpg" alt="carousel3" width="100%">
 	    </div>
 
 	  </div> <!-- End of carousel inner -->
@@ -120,18 +117,7 @@
 	  </a>
 	</div> <!-- End of carousel-example-generic-->
 
-<!--		<div class="jumbotron">
-			<h4 id="head1"><strong>Today Offers on Parties!!!</strong><small> Expires within minutes..Hurry up!! </small></h4>
-			<a href="" class="btn btn-large btn-primary" id="offerzone"> Go to Offer Zone	</a>
-		</div>
-
-		<div class="offerszone">
-			<h4 id="head1"><strong>Today Offers on Parties!!!</strong><small> Expires within minutes..Hurry up!! </small></h4>
-			<a href="" class="btn btn-large btn-primary" id="offerzone"> Go to Offer Zone	</a>
-		</div>-->
-
-
-		<div class="modal fade" id="myModal">
+	<div class="modal fade" id="myModal">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -170,130 +156,126 @@
 								</div><!-- end modal-dialog -->
 		</div><!-- end myModal -->
 
-<div class="row tabs" id="tabswitch">
+		<div class="row tabs" id="tabswitch">
 
-			<div class="col-sm-6" class="tabsandupdates">
-				<h3><strong>View Categories</strong></h3>
-				<div class="tabbable">
-							<ul class="nav nav-pills">
-								<li class="tabs active"><a href="#tab1" data-toggle="tab">Birthday Parties</a></li>
-								<li class="tabs"><a href="#tab2" data-toggle="tab">Candle Light Dinners</a></li>
-								<li class="tabs"><a href="#tab3" data-toggle="tab">Business parties</a></li>
-							</ul>
+					<div class="col-sm-6" class="tabsandupdates">
+						<h3><strong>View Categories</strong></h3>
+						<div class="tabbable">
+									<ul class="nav nav-pills">
+										<li class="tabs active"><a href="#tab1" data-toggle="tab">Birthday Parties</a></li>
+										<li class="tabs"><a href="#tab2" data-toggle="tab">Candle Light Dinners</a></li>
+										<li class="tabs"><a href="#tab3" data-toggle="tab">Business parties</a></li>
+									</ul>
 
-				<div class="tab-content">
-							<div class="tab-pane active " id="tab1">
-								<h4><strong>Birthday Cakes</strong><small> For Kids and Adults</small></h4>
-								<img src="../images/cake4.jpg" alt="Cakes" class="thumbnail pull-center" width="80%" alt="images in pane" />
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									<a href=""> Click here to view More </a></p>
-							</div> <!--tab pane ended -->
-							<div class="tab-pane" id="tab2">
-								<h4> <strong>Candle Light Celebrations </strong><small> For you and your partner</small></h4>
-								<img src="../images/candle.jpg" class="thumbnail pull-center" width="80%"  alt="images in pane" />
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-									 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									 <a href=""> Click here to view More </a></p>
-							</div> <!--tab-pane ended -->
-							<div class="tab-pane" id="tab3">
-								<h4> <strong>Business Parties </strong><small> With your Colleagues </small></h4>
-								<img src="../images/images1.jpg" class="thumbnail pull-center" width=80% height=280px alt="images in pane" />
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-									 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									 <a href=""> Click here to view More </a></p>
-							</div> <!--tab-pane ended -->
-				</div><!--End of Tab content-->
-				</div><!--End of Tabbable -->
-				</div><!--End of col-sm-6 -->
+						<div class="tab-content">
+									<div class="tab-pane active " id="tab1">
+										<h4><strong>Birthday Cakes</strong><small> For Kids and Adults</small></h4>
+										<img src="../images/Happy-Birthday-Dear-Images-Hd-8.jpg" alt="Cakes" class="thumbnail pull-center" width="80%" alt="images in pane" />
+										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+											Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											<a href=""> Click here to view More </a></p>
+									</div> <!--tab pane ended -->
+									<div class="tab-pane" id="tab2">
+										<h4> <strong>Candle Light Celebrations </strong><small> For you and your partner</small></h4>
+										<img src="../images/Makan_Malam_Romantis_di_Bali.jpg" class="thumbnail pull-center" width="80%"  alt="images in pane" />
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+											 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											 <a href=""> Click here to view More </a></p>
+									</div> <!--tab-pane ended -->
+									<div class="tab-pane" id="tab3">
+										<h4> <strong>Business Parties </strong><small> With your Colleagues </small></h4>
+										<img src="../images/party.jpg" class="thumbnail pull-center" width=80%  alt="images in pane" />
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+											 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											 <a href=""> Click here to view More </a></p>
+									</div> <!--tab-pane ended -->
+					</div><!--End of Tab content-->
+					</div><!--End of Tabbable -->
+					</div><!--End of col-sm-6 -->
 
+						<div class="Updates">
+						<div class="col-sm-6">
+							<h3><strong>Other Services</strong></h3>
+								<h4> Coming Soon </h4>
+								<div class="list-group">
+										<a href="#" class="list-group-item">
+										<h4 class="list-group-item-heading"><strong> Occational Events</strong></h4>
+										<p class="list-group-item-text">Services about the Occational Events will be updated soon...Keep on checking.. </p></a>
 
+										<a href="#" class="list-group-item">
+										<h4 class="list-group-item-heading"><strong>Opening Ceremonies</strong></h4>
+										<p class="list-group-item-text"> Services about the Opening Ceremonies will be updated soon...Keep on checking..</p></a>
 
-<div class="Updates">
-<div class="col-sm-6">
-	<h3><strong>Other Services</strong></h3>
-		<h4> Coming Soon </h4>
-		<div class="list-group">
-				<a href="#" class="list-group-item">
-				<h4 class="list-group-item-heading"><strong> Occational Events</strong></h4>
-				<p class="list-group-item-text">Services about the Occational Events will be updated soon...Keep on checking.. </p></a>
+											<a href="#" class="list-group-item">
+											<h4 class="list-group-item-heading"><strong>Product Launches</strong></h4>
+											<p class="list-group-item-text">Services about the Product Launches will be updated soon...Keep on checking.. </p></a>
 
-				<a href="#" class="list-group-item">
-				<h4 class="list-group-item-heading"><strong>Opening Ceremonies</strong></h4>
-				<p class="list-group-item-text"> Services about the Opening Ceremonies will be updated soon...Keep on checking..</p></a>
+											<a href="#" class="list-group-item">
+											<h4 class="list-group-item-heading"><strong>Theme Parties</strong></h4>
+											<p class="list-group-item-text"> Services about the Theme Parties will be updated soon...Keep on checking..</p></a>
 
-					<a href="#" class="list-group-item">
-					<h4 class="list-group-item-heading"><strong>Product Launches</strong></h4>
-					<p class="list-group-item-text">Services about the Product Launches will be updated soon...Keep on checking.. </p></a>
+												<a href="#" class="list-group-item">
+												<h4 class="list-group-item-heading"><strong> Wedding Anniversaries</strong></h4>
+												<p class="list-group-item-text">Services about the Wedding Anniversaries will be updated soon...Keep on checking.. </p></a>
 
-					<a href="#" class="list-group-item">
-					<h4 class="list-group-item-heading"><strong>Theme Parties</strong></h4>
-					<p class="list-group-item-text"> Services about the Theme Parties will be updated soon...Keep on checking..</p></a>
+												<a href="#" class="list-group-item">
+												<h4 class="list-group-item-heading"><strong>Marriage Arrangements</strong></h4>
+												<p class="list-group-item-text"> Services about the Marriage Arrangements will be updated soon...Keep on checking..</p></a>
+						</div><!--End of list group -->
+						</div><!-- End of col-sm-6 -->
+					</div><!-- End of Updates -->
+				</div><!-- End of row-->
 
-						<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><strong> Wedding Anniversaries</strong></h4>
-						<p class="list-group-item-text">Services about the Wedding Anniversaries will be updated soon...Keep on checking.. </p></a>
+				<div class="row mapandvideos">
 
-						<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading"><strong>Marriage Arrangements</strong></h4>
-						<p class="list-group-item-text"> Services about the Marriage Arrangements will be updated soon...Keep on checking..</p></a>
-		</div><!--End of list group -->
-		</div><!-- End of col-sm-6 -->
-	</div><!-- End of Updates -->
+						<div class="col-sm-4">
+								<div class="tab-content" id="location">
+									<div class="tab-pane active">
+										<h4><span class="glyphicon glyphicon-map-marker"></span> Your Location <small>More like our favourite surf spot</small></h4>
 
-</div>
+										<iframe width="100%" height="410" frameborder="10" scrolling="yes" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1614151219646!2d77.63281698355532!3d12.897340252554963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14be966da48b%3A0xfbf47c43d70f5f0a!2sSurya+Nissan!5e0!3m2!1sen!2sin!4v1465811735160" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+										<p> <h4>You are at the above <span class="glyphicon glyphicon-hand-up"></span> Location  </h4></p>
+										<p><small>Enlarge and see to explore more view....</small></p>
+										</div>
+								</div> <!-- End of location -->
+						</div><!-- End of col-4 -->
 
-<div class="row mapandvideos">
+						<p> <h4 id="head2"> More vidoes from us </h4></p>
 
-		<div class="col-sm-4">
-				<div class="tab-content" id="location">
-					<div class="tab-pane active">
-						<h4><span class="glyphicon glyphicon-map-marker"></span> Your Location <small>More like our favourite surf spot</small></h4>
+						<div class="col-sm-4">
+				      <div class="thumbnail">
+				        <iframe width="100%" height="300" src="https://www.youtube.com/embed/tgBWbm2Qy3c" frameborder="0" allowfullscreen></iframe>
+				        <div class="caption">
+				          <h3 class="head3">Start an Event planning</h3>
+				          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
-						<iframe width="100%" height="410" frameborder="10" scrolling="yes" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1614151219646!2d77.63281698355532!3d12.897340252554963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14be966da48b%3A0xfbf47c43d70f5f0a!2sSurya+Nissan!5e0!3m2!1sen!2sin!4v1465811735160" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-						<p> <h4>You are at the above <span class="glyphicon glyphicon-hand-up"></span> Location  </h4></p>
-						<p><small>Enlarge and see to explore more view....</small></p>
-						</div>
-				</div> <!-- End of location -->
-		</div><!-- End of col-4 -->
+				          <p><a href="#" class="btn btn-primary btn-small" target="_blank">Download</a>
+				            <a href="#" target="_blank" class="btn btn-small btn-link">View More</a>
+				          </p>
+				        </div> <!--caption ended -->
+				      </div> <!--thumbnail ended -->
+				    </div> <!--col-4 ended -->
 
-		<p> <h4 id="head2"> More vidoes from us </h4></p>
+						<div class="col-sm-4">
+				      <div class="thumbnail">
+				        <iframe width="100%" height="300" src="https://www.youtube.com/embed/bOj34YwLl9E" frameborder="0" allowfullscreen></iframe>
+				        <div class="caption">
+				          <h3 class="head3">Party With a Purpose</h3>
+				          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
-		<div class="col-sm-4">
-      <div class="thumbnail">
-        <iframe width="100%" height="300" src="https://www.youtube.com/embed/tgBWbm2Qy3c" frameborder="0" allowfullscreen></iframe>
-        <div class="caption">
-          <h3 class="head3">Start an Event planning</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-          <p><a href="#" class="btn btn-primary btn-small" target="_blank">Download</a>
-            <a href="#" target="_blank" class="btn btn-small btn-link">View More</a>
-          </p>
-        </div> <!--caption ended -->
-      </div> <!--thumbnail ended -->
-    </div> <!--col-4 ended -->
-
-		<div class="col-sm-4">
-      <div class="thumbnail">
-        <iframe width="100%" height="300" src="https://www.youtube.com/embed/bOj34YwLl9E" frameborder="0" allowfullscreen></iframe>
-        <div class="caption">
-          <h3 class="head3">Party With a Purpose</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-
-          <p><a href="#" class="btn btn-primary btn-small" target="_blank">Download</a>
-            <a href="#" target="_blank" class="btn btn-small btn-link">View More</a>
-          </p>
-        </div> <!--caption ended -->
-      </div> <!--thumbnail ended -->
-    </div> <!--col-4 ended -->
-
-</div>
+				          <p><a href="#" class="btn btn-primary btn-small" target="_blank">Download</a>
+				            <a href="#" target="_blank" class="btn btn-small btn-link">View More</a>
+				          </p>
+				        </div> <!--caption ended -->
+				      </div> <!--thumbnail ended -->
+				    </div> <!--col-4 ended -->
+				</div> <!--End of Map and videos -->
 
 </div> <!--End of Main container -->
 
@@ -338,10 +320,5 @@
 
 
 
-
-
-
-
-
-</body>
+/body>
 </html>
